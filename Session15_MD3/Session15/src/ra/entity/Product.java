@@ -1,0 +1,93 @@
+package ra.entity;
+
+import java.util.Date;
+
+public class Product {
+    private int productId;
+    private String productName;
+    private float  productPrice;
+    private String productTitle;
+    private Date productCreated;
+    private String productCatalog;
+    private boolean status ;
+    // Constructor không tham số
+
+    public Product() {
+    }
+
+    public Product(String productName, float productPrice, String productTitle, String productCatalog) {
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productTitle = productTitle;
+        this.productCatalog = productCatalog;
+    }
+
+    public int getProductId() {
+        return productId;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public float getProductPrice() {
+        return productPrice;
+    }
+
+    public void setProductPrice(float productPrice) {
+        this.productPrice = productPrice;
+    }
+
+    public String getProductTitle() {
+        return productTitle;
+    }
+
+    public void setProductTitle(String productTitle) {
+        this.productTitle = productTitle;
+    }
+
+    public Date getProductCreated() {
+        return productCreated;
+    }
+
+    public void setProductCreated(Date productCreated) {
+        this.productCreated = productCreated;
+    }
+
+    public String getProductCatalog() {
+        return productCatalog;
+    }
+
+    public void setProductCatalog(String productCatalog) {
+        this.productCatalog = productCatalog;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productId=" + productId +
+                ", productName='" + productName + '\'' +
+                ", productPrice=" + productPrice +
+                ", productTitle='" + productTitle + '\'' +
+                ", productCreated=" + productCreated +
+                ", productCatalog='" + productCatalog + '\'' +
+                ", status=" + status +
+                '}';
+    }
+}
